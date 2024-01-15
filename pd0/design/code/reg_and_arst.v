@@ -10,4 +10,12 @@ module reg_and_arst(
   output reg  z
 );
 
+always @(posedge clock or posedge areset) 
+begin
+  if(areset == 1'b1) 
+    z <= 1'b0;
+  else
+    z <= x & y;
+end
+
 endmodule
