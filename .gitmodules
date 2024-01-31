@@ -1,0 +1,3 @@
+[submodule "pd1"]
+	path = pd1
+	url = https://github.com/preronaghosh/riscv-cycle-5-stage-pipelined-processor.git
